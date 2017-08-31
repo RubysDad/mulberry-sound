@@ -46,7 +46,7 @@ body {
 .button_highlight {
     background: $highlight;
     transition: background .4s ease-in-out;
-    &hover {
+    &:hover {
         background: darken($highlight, 7.5%);
     }
 }
@@ -55,7 +55,7 @@ body {
     background: $white;
     color: $dark;
     transition: background .4s ease-in-out;
-    &hover {
+    &:hover {
         background: darken($white, 7.5%);
     }
 }
