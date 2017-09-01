@@ -10,8 +10,6 @@
 
   <body>
     
-    <%= render "shared/application_nav" %>
-    
     <% if alert %>
       <p class="alert">
         <%= alert %>
@@ -22,6 +20,25 @@
       </p>
     <% end %>
     
+    <header id="main_header" class="cf">
+      <div class="wrapper_wide">
+        <%= link_to "Mulberry Sound", root_path, id: "logo" %>
+        <nav>
+            <ul>
+              <% unless podcast_signed_in? %>
+                    <li><a href="#">Explore</a></li>
+                    <li><%= link_to "Sign in", new_podcast_session_path %></li>
+                    <li><%= link_to "Create a Podcast", new_podcast_registration_path %></li>
+                <% else %>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><%= link_to "Sign Out", destroy_podcast_session_path, method: :delete %></li>
+                <% end %>
+            </ul>
+        </nav>
+      </div>
+    </header>
+  
     <%= yield %>
   </body>
 </html>
