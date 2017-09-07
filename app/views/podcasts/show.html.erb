@@ -1,0 +1,64 @@
+<div id="podcast_show">
+    <div id="show_banner">
+        <div class="wrapper_skinny">
+            <h1><%= @podcast.title %></h1>
+            <p class="description"><%= @podcast.description %></p>
+            <% unless @podcast.itunes.blank? %>
+                <a href="<%= @podcast.itunes %>" class="subscribe_link">Itunes</a>
+            <% end %>
+            <% unless @podcast.stitcher.blank? %>
+                <a href="<%= @podcast.stitcher %>" class="subscribe_link">Itunes</a>
+            <% end %>
+            <% unless @podcast.podbay.blank? %>
+                <a href="<%= @podcast.podbay %>" class="subscribe_link">Itunes</a>
+            <% end %>
+        </div>
+    </div>
+    
+    <div id="breadcrumb">
+        <%= link_to podcasts_path do %>
+            Songs
+            <span></span>
+            Mulberry Sound
+        <% end %>
+    </div>
+    
+    <div id="episodes">
+        <div class="wrapper_skinny">
+            <ul class="cf">
+                <li class="cf">
+                    <div class="episode_thumbnail">
+                        <a href="episode.html">
+                            <img src="sdfghasdjfgh.png" alt="sadgfhasdfj">
+                        </a>
+                    </div>
+                    <div class="episode_overview">
+                        <h2><a href="episode.html">Praise the Lord</a></h2>
+                        <p class="description">O Lord, our Lord, how excellent is thy name
+                        in all the earth! who hast set thy glory above the heavens.</p>
+                    </div>
+                </li>
+                
+                <li class="cf">
+                    <div class="episode_thumbnail">
+                        <a href="episode.html">
+                            <img src="sfhasjfks.img" alt="sdfhasgjf">
+                        </a>
+                    </div>
+                    <div class="episode_overview">
+                        <h2><a href="episode.html">Praise the Lord</a></h2>
+                        <p class="description">O Lord, our Lord, how excellent is thy name
+                        in all the earth! who hast set thy glory above the heavens.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="pagination">
+    <span class="previous_page_disabled">Previous</span>
+    <em class="current">1</em>
+    <a href="#">2</a>
+    <a class="next_page" href="#">Next</a>
+</div>
