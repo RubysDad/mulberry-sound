@@ -17,10 +17,20 @@
     
     <div id="breadcrumb">
         <%= link_to podcasts_path do %>
-            Songs
+            Albums
             <span></span>
-            Mulberry Sound
+            <%= link_to @podcast.title, podcast_path(@podcast) %>
+            <span></span>
+            <%= @episode.title %>
         <% end %>
+    </div>
+    
+    <div id="episode_content">
+        <div class="wrapper_skinny">
+            <img src="images/asdf.png" class="current_episode_thumbnail">
+            <h2><%= @episode.title %></h2>
+            <p class="description"><%= @episode.description %></p>
+        </div>
     </div>
     
     <div id="episodes">
@@ -29,7 +39,7 @@
                 <% @episodes.each do |episode| %>
                     <li class="cf">
                         <div class="episode_thumbnail">
-                            <a href="#">
+                            <a href="episode.html">
                                 <img src="sdfghasdjfgh.png" alt="sadgfhasdfj">
                             </a>
                         </div>
