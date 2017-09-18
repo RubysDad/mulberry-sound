@@ -28,10 +28,10 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.3'
-gem 'paperclip', '~> 5.1'
+gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'mini_magick', '~> 4.8'
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
