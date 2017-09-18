@@ -31,7 +31,7 @@ gem 'devise', '~> 4.3'
 gem 'paperclip', '~> 5.1'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'mini_magick', '~> 4.8'
-gem 'aws-sdk', '< 2.0'
+gem 'aws-sdk'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
