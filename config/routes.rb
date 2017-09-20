@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   end
   
   root 'pages#index'
+  
+  get 'about', to: 'pages#about'
+
 end
