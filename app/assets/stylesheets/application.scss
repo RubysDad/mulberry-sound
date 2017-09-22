@@ -27,7 +27,7 @@ h6, .h6 {
 }
 
 .wrapper_skinny {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -91,13 +91,14 @@ h6, .h6 {
 #main_header {
     color: $dark;
     background: $white;
-    padding: 2.5 rem 0;
+    padding: 2.5rem 0;
     #logo {
         float: left;
         text-transform: uppercase;
         font-weight: 700;
         color: $dark;
         text-decoration: none;
+        margin-left: 2rem;
     }
     nav {
         float: right;
@@ -106,10 +107,17 @@ h6, .h6 {
             margin: 0;
             li {
                 display: inline;
-                margin-left: 2.5 rem;
+                margin-left: 2rem;
+                position: relative;
+                margin-right: 2rem;
                 a {
                     color: $dark;
                     text-decoration: none;
+                    font-weight: 700;
+                    font-size: 0.9rem;
+                    &:hover {
+                        color: $highlight;
+                    }
                 }
             }
         }
@@ -128,7 +136,7 @@ h6, .h6 {
         font-weight: 300;
         letter-spacing: 1px;
         margin: 0;
-        padding: 8rem 0;
+        padding: 8.5rem 0;
     }
 }
 
