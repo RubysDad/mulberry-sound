@@ -10,7 +10,7 @@
             float: left;
             text-transform: uppercase;
             font-weight: 700;
-            color: #C54B8C;
+            color: $highlight;
             text-decoration: none;
             padding-left: 50px;
         }
@@ -24,7 +24,7 @@
                     margin-left: 2.5 rem;
                     padding: 30px;
                     a {
-                        color: #C54B8C;
+                        color: $highlight;
                         text-decoration: none;
                     }
                 }

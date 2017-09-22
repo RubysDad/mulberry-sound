@@ -5,7 +5,7 @@
 <div id="podcasts" class="cf"
     <div class="wrapper">
         <ul class="cf">
-            <%= @podcasts.each do |podcast| %>
+            <% @podcasts.each do |podcast| %>
                 <%= link_to podcast do %>
                     <li>
                         <%= image_tag podcast.thumbnail.url(:medium) %>
