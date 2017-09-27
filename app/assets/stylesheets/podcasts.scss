@@ -46,7 +46,7 @@
 
 #podcast_show {
   #show_banner {
-    background: $dark;
+    background: $highlight;
     text-align: center;
     padding: 5rem 0;
     h1 {
@@ -233,7 +233,7 @@
       top: 14px;
     }
     .jp-progress {
-      background-color: darken($highlight, 25%);
+      background-color: $white;
       border-radius: 20px 20px 20px 20px;
       overflow: hidden;
       position: absolute;
@@ -244,7 +244,7 @@
 
     .jp-play-bar {
       height: 12px;
-      background-color: #fff;
+      background-color: #C0CFD8;
       border-radius: 20px 20px 20px 20px;
     }
 
