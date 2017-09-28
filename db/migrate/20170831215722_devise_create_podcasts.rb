@@ -2,7 +2,7 @@ class DeviseCreatePodcasts < ActiveRecord::Migration[5.1]
   def change
     create_table :podcasts do |t|
       ## Database authenticatable
-      t.string :email,              null: false, default: ""
+      t.string :username,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
       ## Recoverable
@@ -34,7 +34,7 @@ class DeviseCreatePodcasts < ActiveRecord::Migration[5.1]
       t.timestamps null: false
     end
 
-    add_index :podcasts, :email,                unique: true
+    add_index :podcasts, :username,                unique: true
     add_index :podcasts, :reset_password_token, unique: true
     # add_index :podcasts, :confirmation_token,   unique: true
     # add_index :podcasts, :unlock_token,         unique: true
