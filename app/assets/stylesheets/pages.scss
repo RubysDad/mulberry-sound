@@ -10,7 +10,7 @@
             float: left;
             text-transform: uppercase;
             font-weight: 700;
-            color: #281B2C;
+            color: $mulberry;
             text-decoration: none;
             padding-left: 50px;
         }
@@ -21,10 +21,10 @@
                 margin: 0;
                 li {
                     display: inline;
-                    margin-left: 2.5 rem;
+                    margin-left: 2.5rem;
                     padding: 30px;
                     a {
-                        color: #281B2C;
+                        color: $mulberry;
                         text-decoration: none;
                     }
                 }
@@ -34,7 +34,7 @@
     
     h1 {
         color: $white;
-        font-size: 3.5 rem;
+        font-size: 3.5rem;
         font-weight: 300;
         letter-spacing: 1px;
         margin: 7rem 0 2rem 0;
