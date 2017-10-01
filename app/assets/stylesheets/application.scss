@@ -1,12 +1,14 @@
 $white: #FFFFFF;
-$highlight: #281B2C;
+$highlight: #EE7964;/*#281B2C;*/
 $dark: #22292e;
 $light: #EDEFF5;
-$red: rgba(208,103,82,0.85);
+
+
 
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background: #F4F5F6;
 }
 
 h1, .h1,
@@ -45,7 +47,7 @@ h6, .h6 {
 #notice_wrapper {
     width: 100%;
     position: absolute;
-    background: $red;
+    background: $highlight;
     z-index: 999;
     p{
         color: $white;
@@ -92,7 +94,6 @@ h6, .h6 {
 
 #main_header {
     color: $dark;
-    background: #F4F5F6;
     padding: 2.5rem 0;
     #logo {
         float: left;
