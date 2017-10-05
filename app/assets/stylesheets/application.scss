@@ -21,6 +21,14 @@ h6, .h6 {
     font-family: 'Lora', serif;
 }
 
+h4 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
 .wrappr-wide {
     width: 90%;
     margin: 0 auto;
@@ -223,6 +231,10 @@ textarea {
 .float-right {
     float: right;
     padding-right: 30px;
+}
+
+.i {
+    text-align: center;
 }
 
 @import 'normalize';
