@@ -1,0 +1,12 @@
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+        Mulberry Cloud Copyright &copy; / 
+        <% unless podcast_signed_in? %>
+          <%= link_to "Sign in", new_podcast_session_path %>
+        <% else %>
+          <%= link_to "Sign Out", destroy_podcast_session_path, method: :delete %>
+      <% end %>
+    </p>
+  </div>
+</footer>

@@ -220,6 +220,11 @@ textarea {
     padding: 0 0 5rem 0;
 }
 
+.float-right {
+    float: right;
+    padding-right: 30px;
+}
+
 @import 'normalize';
 @import 'pages';
 @import 'podcasts';
